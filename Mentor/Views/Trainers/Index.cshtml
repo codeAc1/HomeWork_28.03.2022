@@ -12,7 +12,7 @@
     <section id="trainers" class="trainers">
         <div class="container" data-aos="fade-up">
 
-            <div class="row" data-aos="zoom-in" data-aos-delay="100">
+            <div id="Trainers" class="row" data-aos="zoom-in" data-aos-delay="100">
 
 
                 @foreach (Trainer trainer in Model)
@@ -36,9 +36,10 @@
                         </div>
                     </div>
                 }
-                <button  type="button" class="load btn btn-success btn btn-block">Load More...</button>
-            </div>
 
+
+            </div>
+            <a asp-controller="Trainers" asp-action="Load" id="load_more" class="load btn btn-success btn btn-block">Load More...</a>
         </div>
     </section><!-- End Trainers Section -->
 
